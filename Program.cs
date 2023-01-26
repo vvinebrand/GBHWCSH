@@ -29,6 +29,7 @@ namespace array
                     rSize++;
                 }
             }
+            Console.WriteLine("\n ");
             Console.Write("Слова, длина которых меньше либо равна 3-м символов: ");
             Console.Write(string.Join(", ", M, 0, rSize));
             Console.ReadKey(true);
