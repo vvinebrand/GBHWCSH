@@ -14,6 +14,11 @@ namespace array
             string words = Console.ReadLine();
             arr = words.Split(' ');
             Console.WriteLine(" ");
+            Console.Write("Ваш массив: ");
+            foreach (var word in arr)
+            {
+                Console.Write($"[{word}] ");
+            }
 
 
         }
