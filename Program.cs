@@ -9,7 +9,11 @@ namespace array
     {
         static void Main(string[] args)
         {
-
+            string[] arr;
+            Console.Write("Введите слова через пробел: ");
+            string words = Console.ReadLine();
+            arr = words.Split(' ');
+            Console.WriteLine(" ");
 
 
         }
