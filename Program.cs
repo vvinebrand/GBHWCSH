@@ -10,7 +10,7 @@ namespace array
         static void Main(string[] args)
         {
             string[] arr;
-            Console.Write("Введите слова через пробел: ");
+            Console.Write("Введите элементы через пробел: ");
             string words = Console.ReadLine();
             arr = words.Split(' ');
             Console.WriteLine(" ");
@@ -30,8 +30,15 @@ namespace array
                 }
             }
             Console.WriteLine("\n ");
-            Console.Write("Слова, длина которых меньше либо равна 3-м символов: ");
-            Console.Write($"[{ string.Join(", ", M, 0, rSize)}]");
+            if (rSize == 0)
+            {
+                Console.Write("В массиве нет элементов, длина которых меньше либо равна 3-м символам.");
+            }
+            else
+            {
+                Console.Write("Элементы, длина которых меньше либо равна 3-м символов: ");
+                Console.Write($"[{string.Join(", ", M, 0, rSize)}]");
+            }
             Console.ReadKey(true);
 
 
