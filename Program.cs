@@ -19,6 +19,16 @@ namespace array
             {
                 Console.Write($"[{word}] ");
             }
+            var M = new string[arr.Length];
+            var rSize = 0;
+            foreach (var value in arr)
+            {
+                if (value.Length <= 3)
+                {
+                    M[rSize] = value;
+                    rSize++;
+                }
+            }
 
 
         }
